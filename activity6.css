@@ -1,3 +1,5 @@
-body {
-    background-image: url("otto.png");
-   }
+element {
+    background-image: url('otto.png');
+    background-repeat: repeat;
+  }
+  

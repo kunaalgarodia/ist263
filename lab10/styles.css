@@ -26,7 +26,7 @@ nav a:hover {color: #FF6F61;}
     nav a {
       width: 100%;
       display: block;
-      text-align: center;
+      padding: 3px 0;
     }
   }  
 

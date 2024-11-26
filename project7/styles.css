@@ -1,5 +1,6 @@
 header {background-color: #458FFF;
-padding-bottom: 10px;}
+padding-bottom: 10px;
+padding-top: 10px;}
 
 body {
     font-family: Helvetica, Arial, sans-serif; /* Choose your desired font */
@@ -21,7 +22,26 @@ nav {padding: 20px;
     text-align: center;}
 
 nav a {padding: 40px;
+    font-size: 18px;
     color: inherit;
     text-decoration: none}
 
 h3 {padding-left: 50px;}
+
+#size-selection button {margin-top: 15px;}
+
+#images {display: flex;
+    flex-direction: column; align-items: center;}
+    #thumbnails {padding-top: 10px; display: flex; gap: 10px;}
+    #info {padding-left: 50px; margin-top: -15px;}
+    #info ul {padding-left: 25px;}
+    #info li {
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    #info h1 {text-align: left;}
+    #info h3 {padding-left: 0;
+    padding-bottom: 10px;}
+    #messages {color: green;
+        font-weight: bold;
+        font-size: 18px;}

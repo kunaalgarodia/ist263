@@ -9,28 +9,13 @@
         <style>
             #merch3_2, #merch3_3 {display: none;}
             #maincontainer {display: flex;
-                padding: 50px;
+                padding-left: 100px;
+                padding-right: 100px;
+                padding-top: 75px;
+                padding-bottom: 75px;
                 justify-content: space-between;}
-            #images {display: flex;
-            flex-direction: column;}
         </style>
-        <script>
-            function ImagesOff() {
-                document.getElementById('merch3_1').style.display = 'none';
-                document.getElementById('merch3_2').style.display = 'none';
-                document.getElementById('merch3_3').style.display = 'none';
-            }
-            function Merch1On() {
-                document.getElementById('merch3_1').style.display = 'block';
-            }
-            function Merch2On() {
-                document.getElementById('merch3_2').style.display = 'block';
-            }
-            function Merch3On() {
-                document.getElementById('merch3_3').style.display = 'block';
-            }
-        </script>
-
+        <script src="products.js"></script>
     </head>
 
     <body>
@@ -45,35 +30,55 @@
         <div id="maincontainer">
             <div id="images">
                 <div id="bigpictures">
-                    <img src="../images/project_images/merch3_1.jpg" alt="Spring 2024 Shirt 1" width="500" id="merch3_1">
-                    <img src="../images/project_images/merch3_2.jpg" alt="Spring 2024 Shirt 2" width="500" id="merch3_2">
-                    <img src="../images/project_images/merch3_3.jpg" alt="Spring 2024 Shirt 3" width="500" id="merch3_3">
+                    <img src="../images/project_images/merch3_1.jpg" alt="Spring 2024 Shirt 1" width="550" id="merch3_1">
+                    <img src="../images/project_images/merch3_2.jpg" alt="Spring 2024 Shirt 2" width="550" id="merch3_2">
+                    <img src="../images/project_images/merch3_3.jpg" alt="Spring 2024 Shirt 3" width="550" id="merch3_3">
                 </div>
                 <div id="thumbnails">
                     <img src="../images/project_images/merch3_1.jpg" alt="Spring 2024 Shirt 1" width="75" onclick="ImagesOff(); Merch1On();">
                     <img src="../images/project_images/merch3_2.jpg" alt="Spring 2024 Shirt 2" width="75" onclick="ImagesOff(); Merch2On();">
                     <img src="../images/project_images/merch3_3.jpg" alt="Spring 2024 Shirt 3" width="75" onclick="ImagesOff(); Merch3On();">
                 </div>
+                <div>
+                    <p><strong>Model: </strong>James Sands, @james._.sands</p>
+                </div>
             </div>
             <div id="info">
-                <h3>Spring 2024 Rush T-Shirt</h3>
-                <p>$24.99</p>
-                <p><strong>Product Description</strong></p>
+                <h1>Spring 2024 Rush T-Shirt</h1>
+                <h3>$24.99</h3>
+                <p><strong>Description</strong></p>
                 <p>The Spring 2024 Rush T-Shirt is perfect for everyday wear. This soft, breathable tee is ideal for casual days, rush events, and showing off your tech passion.</p>
-                <p><strong>Available Sizes</strong></p>
-                <ul>Small (S)</ul>
-                <ul>Medium (M)</ul>
-                <ul>Large (L)</ul>
-                <ul>Extra Large (XL)</ul>
-                <p><strong>Product Features</strong></p>
-                <ul><strong>Material:</strong> 100% Cotton</ul>
-                <ul><strong>Colors:</strong> Navy Blue, White, Charcoal Gray</ul>
-                <ul>Pre-shrunk for a perfect fit</ul>
-                <ul>Unisex design</ul>
-                <ul>Lightweight and breathable fabric</ul>
+                <p><strong>Features</strong></p>
+                <ul>
+                    <li><strong>Material:</strong> 100% Cotton</li>
+                    <li><strong>Colors:</strong> Navy Blue, White, Charcoal Gray</li>
+                    <li>Pre-shrunk for a perfect fit</li>
+                    <li>Unisex design</li>
+                    <li>Lightweight and breathable fabric</li>
+                </ul>
                 <p><strong>Additional Information</strong></p>
-                <p><strong>Shipping:</strong> Free for orders over $50</p>
-                <p><strong>Returns:</strong> 30-day hassle-free returns</p>
+                <ul>
+                    <li><strong>Shipping:</strong> Free for orders over $50</li>
+                    <li><strong>Returns:</strong> 30-day hassle-free returns</li>
+                </ul>
+                <form id="size-selection">
+                    <p><strong>Sizes</strong></p>
+                    <label>
+                        <input type="radio" name="size" value="S"> Small (S)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="M"> Medium (M)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="L"> Large (L)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="XL"> Extra Large (XL)
+                    </label><br>
+                    <button type="submit" id="add-to-cart" onclick="AddToCart();">Add To Cart</button>
+                </form>
+                <br>
+                <div id="messages"></div>
             </div>
         </div>
     </body>

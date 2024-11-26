@@ -33,7 +33,7 @@ h3 {padding-left: 50px;}
 #images {display: flex;
     flex-direction: column; align-items: center;}
     #thumbnails {padding-top: 10px; display: flex; gap: 10px;}
-    #info {padding-left: 50px; margin-top: -15px;}
+    #info {padding-left: 50px; margin-top: -20px;}
     #info ul {padding-left: 25px;}
     #info li {
         margin-bottom: 10px;

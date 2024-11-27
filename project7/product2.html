@@ -9,21 +9,33 @@
         <link rel="stylesheet" href="styles.css">
         <style>
             #merch3_2, #merch3_3 {display: none;}
+            
             #maincontainer {display: flex;
                 padding-left: 100px;
                 padding-right: 100px;
                 padding-top: 75px;
                 padding-bottom: 75px;
                 justify-content: space-between;}
-                @media (max-width: 768px) {
-                    #maincontainer {
-                    flex-direction: column;
-                    padding: 20px;
-                }
-                #info {
-                    padding-left: 10px;
-                    padding-top: 25px;
-                }
+            
+            @media (max-width: 768px) {
+            #maincontainer {
+            flex-direction: column;
+            padding: 20px;}
+
+            #info {
+            padding-left: 10px;
+            padding-top: 25px;}
+
+            #bigpictures img {
+                width: 100%; /* Scale down to fit container */
+                max-width: 350px; /* Set a limit for scaling */
+            }
+    
+            #thumbnails img {
+                width: 60px; /* Adjust thumbnail size */
+            }
+    
+            }
         </style>
         <script src="products.js"></script>
     </head>

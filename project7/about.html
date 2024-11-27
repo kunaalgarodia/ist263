@@ -10,6 +10,18 @@
         <style>
             #maincontainer {display: flex;
                 padding: 75px;}
+                @media (max-width: 768px) {
+                    #maincontainer {
+                    flex-direction: column;
+                    padding: 20px;
+                }
+                #maincontainer img {
+                    width: 100%;
+                    padding-bottom: 20px;
+                }
+                #info {
+                    padding-left: 10px; /* Default padding for desktop */
+                }
         </style>
     </head>
 
